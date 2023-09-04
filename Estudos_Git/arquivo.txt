@@ -1,0 +1,38 @@
+Alguns comandos usados no Git
+
+Primeiramente, acessar a pasta pelo git bash e executar o comando:
+git init - cria o repositório local, ainda não está no github
+git add - arquivo será monitorado pelo controle de versão
+git add . - adiciona todos os arquivos para controle de versão
+git status - verifica os arquivos a serem adicionados ao git, é possível ver também a sua versão e quais não foram adicionados
+git commit -m "" - adiciona uma mensagem para o ponto na história do arquivo, o commit que permite que versões anteriores possam ser revisitadas
+git commit -am "" - usado quando um arquivo só foi modificado, o comando irá fazer um add e logo em seguida um commit já com a mensagem
+git diff - verifica o que foi modificado entre a nova versão e a versão anterior
+git log - ve um histórico de commits
+git show numero-do-commit - ve o que foi modificado nesse exato ponto na história
+
+Para criar uma nova funcionalidade no projeto, sem modificar o projeto anterior
+git branch nome-da-branch - cria-se uma ramificação do master, outra linha do tempo
+git checkout -b nome-da-branch - cria a branch e já muda para ela
+git checkout nome-da-branch - altera para a linha do tempo mencionada no nome
+git branch - verifica as linhas do tempo criadas
+ls -al - visualiza todos os arquivos commitados
+git merge nome-da-branch- une linhas do tempo paralelas com a master/principal. Sempre que for realizar o merge, o arquivo do secundário deve ter as mesmas informações do arquivo do primário mais o que deve ser merged, se não vai dar erro (git merge --abort)
+git branch -D nome-da-branch - deleta a branch
+
+Quero agora colocar meu projeto na nuvem, ou seja, colocar no github de forma remota
+git remote add origin https://github.com.LGustta13/Git.git - cria o repositório remoto no github
+git remote -v - verifica os repositórios remotos criados
+git push -u origin master -  empurra o repositório local para o online, criar a branch master
+git push - manda os arquivos commitados sem necessidade de criar o master
+
+Quero agora baixar ou clonar um arquivo remoto para local
+git clone https://github.com.LGustta13/Git.git - pega um projeto já iniciado, geralmente feito quando trabalhando em times
+
+Já tenho o projeto no github, meu parceiro mexeu nele e fez um push no github, e preciso atualizar o mesmo na minha máquina local
+git pull - puxa atualizações da nuvem, pode ser que alguém tenha modificado
+
+Como voltar um arquivo para determinado momento da linha do tempo?
+git checkout numero-do-commit -- nome-do-arquivo - restaura aquele determinado arquivo de um ponto na linha do tempo
+git checkout -- nome-do-arquivo - recupera o arquivo que foi deletado no último ponto da história, funciona se após essa deleção não foi criado o ponto na história
+

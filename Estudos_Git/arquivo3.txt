@@ -1,0 +1,4 @@
+Exemplo de usar com git
+Adicionando mais informações
+Ajeitando mais informações
+Preciso colocar mais uma linha
