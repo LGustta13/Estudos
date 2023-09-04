@@ -1,0 +1,49 @@
+div.color {
+  color: green;
+}
+
+p#sec {
+  color: blue;
+}
+
+p#thi {
+  color: rgb(0,0,255);
+}
+
+p#fou {
+  color: #FF0000;
+}
+
+div.inherit {
+  color: red;
+}
+
+p#fif {
+  color: "inherit";
+}
+
+p#six {
+  color: hsl(180, 0%, 32%, 95%);
+}
+
+div.background p {
+  /* box */
+  width: 500px;
+  height: 300px;
+  border: 5px dashed orange;
+  box-sizing: border-box;
+
+  /* text */
+  color: orange;
+  font-size: 2rem;
+
+  /* background */
+  background-color: blue;
+  background-image: url("https://source.unsplash.com/random/200x200/?fruit/1");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background: linear-gradient(180deg, red, yellow);
+}

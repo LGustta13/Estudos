@@ -1,0 +1,43 @@
+.border-box-conteudo {
+  box-sizing: border-box;
+  font-size: 2rem;
+
+  height: 300px;
+  width: 300px;
+  border: 2px solid black;
+  padding: 0 2px;
+}
+
+.content-box-acumula {
+  box-sizing: content-box;
+  font-size: 2rem;
+
+  height: 300px;
+  width: 300px;
+  border: 2px solid black;
+  padding: 0 20px;
+
+  margin-bottom: 10px;
+}
+
+.display-block {
+  display: block;
+
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+
+  padding: 20px;
+  margin: 20px;
+}
+
+.display-inline {
+  display: inline;
+
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+
+  padding: 20px;
+  margin: 20px;
+}

@@ -1,0 +1,262 @@
+<!-- Aqui tem um conteúdo comentado -->
+
+<!-- Exemplo de tag HTML -->
+<h1>
+    Comentários
+    Tags marcam o texto
+</h1>
+
+<!-- Elementos vazios 
+    Alguns deles apresentam atributos em formato de texto ou boolenos
+    Exemplo: source, texto alternativo, disabled, hyperlink reference
+    <a> âncora coloca link em algum texto
+    <img> adiciona imagens
+    <input> permite adicionar texto
+    -->
+<img src="" alt="">
+<input type="text" !disabled>
+<a href="https://google.com" title="isn't">Clique aqui</a>
+
+<!-- Atributos globais 
+    class (pode se repetir para várias tags, aplicar estilos e acessar pelo javascript)
+    contenteditable (torna editável o elemento no browser)
+    data-* (expande os tipos de atributos)
+    hidden (esconde um elemento na tela)
+    id (único para cada tag)
+    style (estilizar)
+    tabindex (navegação com o teclado pelo tab)
+    title (Definir um título, aparece passando o mouse por cima)
+-->
+
+<div class="carrinho" !contenteditable>conteúdo</div>
+<div class="carrinho" contenteditable>conteúdo</div>
+<div data-id="carrinho">conteúdo</div>
+<div class="carrinho" hidden>conteúdo escondido</div>
+<div id="carrinho">conteúdo</div>
+<div class="carrinho" style="color: red;">conteúdo</div>
+<div title="título do conteúdo">conteúdo</div>
+
+<div tabindex="1">tab1</div>
+<div tabindex="3">tab3</div>
+<div tabindex="2">tab2</div>
+
+<!-- Aninhamento de tags 
+    Hierarquia (Algumas tags pai são acompanhadas de outras filhas)
+    Fluxo (As tags vão ser lidas de cima para baixo)
+    Posicionamento (Algumas tags tem a caract. de formar blocos, assim quebram linhas no browser)
+
+    <br> Quebra linha
+    <em> Itálico
+    <strong> Negrito
+    <p> Parágrafo
+-->
+
+<br>
+<p>
+    Elemento do <em>texto</em>
+    Este elemento fica na frente
+<p>Outro elemento do <a href="">texto</a></p>
+</p>
+
+<!-- Conteúdo do texto e caracteres reservados
+    &nbsp (coloca espaçamento)
+    &lt; (<)
+    &gt; (>)
+    &amp; (&)
+    &quot. ("")
+-->
+
+<p>
+    &nbsp;Caracteres reservados
+    &quot;Olá&quot;
+</p>
+
+<!-- Anatomia de um documento HTML -->
+
+<!-- Semantica 
+    Dar significado
+    Elementos semânticos (quais elemento serão adequados para o que quero fazer)
+    Cabeçalhos e parágrafos
+-->
+
+<!-- Listas 
+    <ol> Ordenadas (numerada)
+    <ul> Não ordenadas (pontuada)
+-->
+<br>
+
+<h1>Minha lista</h1>
+
+<ol>
+    <li>Arroz</li>
+    <li>Feijão</li>
+    <li>Batata</li>
+</ol>
+
+<!-- Citações 
+    <blockquote>
+    <cite>
+    <q>
+-->
+
+<!-- Abreviações
+    <abbr>
+-->
+
+<abbr title="Hypertext Markup Language">HTML</abbr>
+
+<!-- Detalhes de contato
+    <address>
+-->
+
+<address>
+    <p>Luis Gustavo
+        <strong>Três Pontas, MG</strong>
+    </p>
+</address>
+
+<!-- Listas de descrição
+    <dl> Cria a lista
+    <dt> Adiciona um título
+    <dd> Adiciona uma descrição
+-->
+
+<dl>
+    <dt>
+        Título da descrição
+    </dt>
+    <dd>
+        Descrição em si
+    </dd>
+</dl>
+
+<!-- Representação de códigos de computador
+    <code> partes genéricas do <pre>
+    <pre> representa um bloco de código, mantém espaços e recuos
+-->
+
+<pre>
+    <code style="color: red;">
+        document.querySelector("body")
+    </code>
+</pre>
+
+<!-- Elementos genéricos
+    <div> Estrutura com quebra de linhas
+    <span> Estrutura sem quebra de linhas
+-->
+
+<div>
+    <span>
+        Testando os elementos genéricos
+    </span>
+
+    <span>
+        entre eles span e div
+    </span>
+</div>
+
+<!-- Âncora
+    <a>
+
+    Atributos globais:
+    title,
+    id,
+    href (Direcionamento para url, fragmento, email, telefone)
+    donwload (irá baixar alguma coisa)
+    target (determina um alvo de direcionamento)
+        _blank (abre uma tab nova)
+        _self (padrão)
+
+    URLS e Caminhos dos arquivos
+        url
+        arquivos
+-->
+<br>
+<a href="https://google.com" target="_blank">Abrir Google Chrome</a>
+
+<p>Lista com âncoras</p>
+
+<ul>
+    <li><a href="#about">âncora de Sobre mim com fragmento</a></li>
+    <li><a href="#history">âncora de História com fragmento</a></li>
+    <li><a href="works">âncora de Trabalhos com fragmento</a></li>
+
+    <li>
+        <a href="https://google.com" title="Ir para o Google">
+            <h1>âncora com url</h1>
+            <p>É possível acessar por um parágrafo</p>
+        </a>
+    </li>
+
+    <li>
+        <a href="praticaUmParagrafos.html" target="_blank">
+            Abrir arquivo do meu projeto
+        </a>
+    </li>
+</ul>
+
+<h1 id="about">âncora Sobre mim cai aqui</h1>
+<h2></h2>
+
+<!-- Tabelas
+    <table>
+        caption - descrição da tabela
+        thead - table head
+        tr - table row
+        th - table header
+        tbody - table body
+        td - table data
+        tfoot - table foot
+-->
+
+<table>
+    <caption>Pessoas por idade</caption>
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Gustavo</td>
+            <td>24</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>Total:</td>
+            <td>2 Pessoas</td>
+        </tr>
+    </tfoot>
+</table>
+
+<!-- Cabeçalhos
+
+    <head> não visível mas configurável
+
+
+    <meta> metadados
+        atributos: 
+            charset (codificação de caracteres especiais)
+                - UTF-8
+
+            name
+                - viewport (tela branca do browser)
+                - author (definir autor da página)
+                - description (descrição no motor de busca do Google)
+                - robots (coloca os resultados de busca do google)
+            
+            content
+                - width, initial-scale (portabilidade para dispositivos mobiles)
+                - index, follow (define características dos links da página, indexar a página, entre outros)
+    <link> para ícones personalizados
+        atributos:
+            rel (relacionamento)
+            href (referência)
+            sizes (tamanho do ícone 42x, 72x, 96x)
+-->
